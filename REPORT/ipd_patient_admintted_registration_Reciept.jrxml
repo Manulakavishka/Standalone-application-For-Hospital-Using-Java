@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ipd_patient_admintted_registration_Reciept" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="baece15c-e1e4-44f4-b62b-7b8a8c28f055">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="53"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="hms"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="PARID" class="java.lang.String"/>
+	<parameter name="fname" class="java.lang.String"/>
+	<parameter name="lname" class="java.lang.String"/>
+	<parameter name="dob" class="java.lang.String"/>
+	<parameter name="mobile" class="java.lang.String"/>
+	<parameter name="address" class="java.lang.String"/>
+	<parameter name="city" class="java.lang.String"/>
+	<parameter name="zipcode" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT * FROM ipd_p_a_registration i INNER JOIN guardian g ON i.guardian_id=g.id  WHERE PARID = $P{PARID};]]>
+	</queryString>
+	<field name="PARID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PARID"/>
+		<property name="com.jaspersoft.studio.field.label" value="PARID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ipd_p_a_registration"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="NIC" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NIC"/>
+		<property name="com.jaspersoft.studio.field.label" value="NIC"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ipd_p_a_registration"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="doctor_sid" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="doctor_sid"/>
+		<property name="com.jaspersoft.studio.field.label" value="doctor_sid"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ipd_p_a_registration"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dcharge" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="dcharge"/>
+		<property name="com.jaspersoft.studio.field.label" value="dcharge"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ipd_p_a_registration"/>
+	</field>
+	<field name="room_type" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="room_type"/>
+		<property name="com.jaspersoft.studio.field.label" value="room_type"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ipd_p_a_registration"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Advance" class="java.lang.Double">
+		<property name="com.jaspersoft.studio.field.name" value="Advance"/>
+		<property name="com.jaspersoft.studio.field.label" value="Advance"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ipd_p_a_registration"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="user" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="user"/>
+		<property name="com.jaspersoft.studio.field.label" value="user"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ipd_p_a_registration"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="date" class="java.time.LocalDateTime">
+		<property name="com.jaspersoft.studio.field.name" value="date"/>
+		<property name="com.jaspersoft.studio.field.label" value="date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ipd_p_a_registration"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="status_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="status_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ipd_p_a_registration"/>
+	</field>
+	<field name="guardian_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="guardian_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="guardian_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ipd_p_a_registration"/>
+	</field>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="id"/>
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="guardian"/>
+	</field>
+	<field name="nic" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="nic"/>
+		<property name="com.jaspersoft.studio.field.label" value="nic"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="guardian"/>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="name"/>
+		<property name="com.jaspersoft.studio.field.label" value="name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="guardian"/>
+	</field>
+	<field name="contact_no" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="contact_no"/>
+		<property name="com.jaspersoft.studio.field.label" value="contact_no"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="guardian"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="220" splitType="Stretch">
+			<staticText>
+				<reportElement x="4" y="109" width="51" height="20" uuid="d0062a28-b4da-4336-a2d1-71de0d3354d9"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Phone :]]></text>
+			</staticText>
+			<image>
+				<reportElement x="340" y="1" width="215" height="180" uuid="ecf7d7fe-2d09-439d-b89d-fe083c6cabcb"/>
+				<imageExpression><![CDATA["C:\\Users\\User\\Desktop\\HMS\\hospital-logo-icon-hospital-logo-icon-135146804.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="4" y="69" width="51" height="20" uuid="e421acbf-1e88-4045-b9a8-6dd6524c105d"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[City :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="161" y="0" width="349" height="29" uuid="ae38e140-e740-4dc8-9637-5021381f2e64"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Neerogya Helth Care Center]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="29" width="51" height="20" uuid="8592e3cb-6983-4d93-a3d7-f8e28c739a94"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="89" width="200" height="20" uuid="5371eafb-5c77-41c8-a638-ccfbfb47cee8"/>
+				<text><![CDATA[4356]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="49" width="51" height="20" uuid="63ff5f21-2038-430f-8840-521d411475f3"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="129" width="51" height="20" uuid="eae417bd-b0cb-4c26-a3b0-f95bb1bc2945"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="69" width="200" height="20" uuid="69aa79c2-69f8-408a-8d8f-72612c57cb42"/>
+				<text><![CDATA[Abilipitiya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="49" width="200" height="20" uuid="0ec07623-154a-4003-91a4-11ae02d2d4ab"/>
+				<text><![CDATA[123/ Abilipitiya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="0" width="157" height="29" uuid="fb8bf2aa-d724-468e-bafb-26c3f0f901f0"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Company Name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="161" width="56" height="20" uuid="61b8b135-ff98-4262-8fdc-50c2adc773e5"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Issued By : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="4" y="181" width="551" height="39" backcolor="#9999FF" uuid="c3bca77c-edd1-49ec-8937-d35c4da5a9f4"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="109" width="200" height="20" uuid="a0e6dcef-7330-41f6-b912-13ebfaeaa3ba"/>
+				<text><![CDATA[+94754543459]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="304" y="190" width="44" height="20" uuid="ed8b2373-f0fc-4ed5-8343-7a20f15baec7"/>
+				<textElement textAlignment="Justified">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="190" width="45" height="20" uuid="3bdf9f4b-4b09-412c-b4c2-4d7cf09e808f"/>
+				<textElement textAlignment="Justified">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[PARID : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="129" width="244" height="20" uuid="385d0025-acc4-4219-99d4-a31da0c2b565"/>
+				<text><![CDATA[neerogyacare@hospital.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="89" width="51" height="20" uuid="822a2fbf-20e8-4e9c-94ed-6d8a11f762b5"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Zip Code :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="29" width="200" height="20" uuid="e4212eb9-9877-4288-8881-d4b8bc57c48c"/>
+				<text><![CDATA[K.D.K Kodikara]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="61" y="190" width="209" height="20" uuid="7352b21c-87d2-4697-a1d2-f3bb66ae4573"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{PARID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="348" y="190" width="206" height="20" uuid="de3d37c9-2c31-4dcf-bc02-94846e4e78fd"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="60" y="161" width="200" height="20" uuid="8664fb40-c400-4b50-a7d2-d463eb425a76"/>
+				<textFieldExpression><![CDATA[$F{user}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<detail>
+		<band height="280" splitType="Stretch">
+			<textField>
+				<reportElement x="120" y="160" width="353" height="20" uuid="734436aa-f901-400e-b0f5-3bbb50fb462d"/>
+				<textFieldExpression><![CDATA[$F{doctor_sid}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="180" width="353" height="20" uuid="ecc7b702-4647-462a-b9bc-df5a171c8197"/>
+				<textFieldExpression><![CDATA[$F{room_type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="20" width="349" height="20" uuid="bbec2d8b-f467-4283-b715-4d6b606f55c1"/>
+				<textFieldExpression><![CDATA[$F{NIC}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="260" width="352" height="20" uuid="413a90ba-9378-4dc5-a820-eb7bc98012ef"/>
+				<textFieldExpression><![CDATA[$F{Advance}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="260" width="120" height="20" uuid="3157dd7b-ab74-479b-beb9-ab4313b2d572"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Advance (RS) :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="240" width="120" height="20" uuid="81e50f10-9ac2-41f2-ad22-8f6e7c9b0a48"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Guardian Contact :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="220" width="120" height="20" uuid="44ebf8a4-66f4-48b3-b73a-c06bafc71393"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Guardian Name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="200" width="120" height="20" uuid="1d33b1e8-6a0d-4b46-827d-ab3498fcc3f7"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Guardian NIC :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="180" width="120" height="20" uuid="52b3e95b-a186-4206-bcf3-32a6f73053c7"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Room Type :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="160" width="120" height="20" uuid="40d9c7be-7c05-4fb2-a61a-3802ec3fa39c"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Doctor Username :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="20" width="116" height="20" uuid="0447e745-3022-4754-92bd-91afa3590231"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIC :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="40" width="350" height="20" uuid="a90b7f71-f061-438e-9e03-879a0dc9cec1"/>
+				<textFieldExpression><![CDATA[$P{fname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="60" width="350" height="20" uuid="6c9f014a-bffd-4c7b-8dec-a07d1030e476"/>
+				<textFieldExpression><![CDATA[$P{lname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="80" width="350" height="20" uuid="0d6a3828-48cf-42e4-9266-cdf31f0ccb69"/>
+				<textFieldExpression><![CDATA[$P{dob}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="100" width="350" height="20" uuid="6b746407-813e-454e-a300-f24ad514c726"/>
+				<textFieldExpression><![CDATA[$P{mobile}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="120" width="350" height="20" uuid="3153d660-144c-45ad-b78e-ab62a4afc5c2"/>
+				<textFieldExpression><![CDATA[$P{address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="140" width="350" height="20" uuid="223aa715-240f-4493-b7c3-15de28f2b2ab"/>
+				<textFieldExpression><![CDATA[$P{zipcode}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="4" y="40" width="116" height="20" uuid="2e040a88-59dd-43f3-bff4-90c9984d5879"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[First Name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="4" y="60" width="116" height="20" uuid="50a07123-8ae7-4fb7-a767-87178fb95914"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Last Name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="80" width="120" height="20" uuid="8e93cea9-130d-4c26-9a21-2942996ae29d"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date Of  Birth :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="100" width="120" height="20" uuid="cde057be-ac3c-4f0c-81df-7e4434b64908"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Mobile :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="120" width="120" height="20" uuid="851b06e9-8f1d-4852-b4b3-e53e86658275"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="140" width="120" height="20" uuid="4b88da5e-d6e3-4be7-ac78-193cac6b5be6"/>
+				<textElement textAlignment="Right">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Zipcode :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="120" y="240" width="353" height="20" uuid="331ac8fc-efe3-42ce-a6d5-ae47772a7eff"/>
+				<textFieldExpression><![CDATA[$F{contact_no}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="220" width="348" height="20" uuid="577839c5-2b33-41d9-8f7a-483b6c441445"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="200" width="353" height="20" uuid="3daa6cc8-a4f7-4d0e-b22e-c9fc99003d37"/>
+				<textFieldExpression><![CDATA[$F{nic}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

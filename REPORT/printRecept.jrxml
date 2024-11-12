@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="printRecept" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b4f9b0f9-b3ba-426a-8690-f4309f18afd0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="hms"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="rid" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT RID, datetime FROM opd_reception WHERE RID = $P{rid};]]>
+	</queryString>
+	<field name="RID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="RID"/>
+		<property name="com.jaspersoft.studio.field.label" value="RID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="opd_reception"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="datetime" class="java.time.LocalDateTime">
+		<property name="com.jaspersoft.studio.field.name" value="datetime"/>
+		<property name="com.jaspersoft.studio.field.label" value="datetime"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="opd_reception"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="198" splitType="Stretch">
+			<staticText>
+				<reportElement x="61" y="99" width="188" height="20" uuid="42db8d00-b437-4076-813f-c44ae63a4164"/>
+				<text><![CDATA[4356]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="79" width="188" height="20" uuid="f86e0c16-1226-4127-9ac3-b55e2f76fdf0"/>
+				<text><![CDATA[Abilipitiya]]></text>
+			</staticText>
+			<image>
+				<reportElement x="382" y="0" width="173" height="148" uuid="3cdb1981-7e5d-4a12-bce1-f8c1d5aa3175"/>
+				<imageExpression><![CDATA["C:\\Users\\User\\Desktop\\HMS\\hospital-logo-icon-hospital-logo-icon-135146804.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="167" y="10" width="337" height="29" uuid="9f7f8a4f-035e-4fdd-ba35-d99cd317b41c"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Neerogya Helth Care Center]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="79" width="51" height="20" uuid="e2726b65-2d78-4c4e-aaf8-b788e7bac0ce"/>
+				<text><![CDATA[City        :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="39" width="51" height="20" uuid="189bf833-687e-4a73-9c77-5857dda1937e"/>
+				<text><![CDATA[Name     :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="59" width="188" height="20" uuid="94ab175f-ce57-47d3-8331-ff067be659a9"/>
+				<text><![CDATA[123/ Abilipitiya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="119" width="51" height="20" uuid="4185f294-07c7-42bf-9e83-6134ea5f1960"/>
+				<text><![CDATA[Phone    :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="10" width="157" height="29" uuid="851471cf-8aac-4c0a-a8c0-7dc2504e9c8e"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Company Name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="59" width="51" height="20" uuid="eccd4a5f-9a08-4c36-83c6-d0acdd2b623e"/>
+				<text><![CDATA[Address  :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="39" width="188" height="20" uuid="d0296e98-8f7e-42d9-b927-1cc8260c5e6c"/>
+				<text><![CDATA[K.D.K Kodikara]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="99" width="51" height="20" uuid="e1bf8c6b-5905-4f80-b914-e5ca2a0f4ef9"/>
+				<text><![CDATA[Zip Code:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="139" width="232" height="20" uuid="0da71dff-bad2-4da5-b279-169eea7fff9c"/>
+				<text><![CDATA[neerogyacare@hospital.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="139" width="51" height="20" uuid="2150c58b-90e4-439c-9b94-954498aa0104"/>
+				<text><![CDATA[E_mail   :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="119" width="188" height="20" uuid="6190f919-03de-498e-8b42-4b18b558b836"/>
+				<text><![CDATA[+94754543459]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="159" width="545" height="39" uuid="4dcaf9f5-dbd9-4d4e-8fb8-1891f4ec4a78"/>
+				<textElement textAlignment="Center">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Recept]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<detail>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="10" y="0" width="70" height="20" uuid="10b21f57-d695-4d5f-be19-5edae8a57ce1"/>
+				<text><![CDATA[Recept ID :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="80" y="0" width="220" height="20" uuid="e695faa4-7a56-4df4-88f0-7a8954ca51e8"/>
+				<textFieldExpression><![CDATA[$F{RID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="370" y="0" width="37" height="20" uuid="3b27c3d5-60c6-4530-8b8a-f67ffddc60b4"/>
+				<text><![CDATA[Date :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="407" y="0" width="148" height="20" uuid="313ff1c4-3cb3-45d9-9283-b0cbea642c81"/>
+				<textFieldExpression><![CDATA[$F{datetime}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement x="110" y="24" width="306" height="37" uuid="b174d46d-4d0b-4c30-a1d1-7326d4e30964"/>
+				<jr:barbecue xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd" type="Code128" drawText="false" checksumRequired="false">
+					<jr:codeExpression><![CDATA[$F{RID}]]></jr:codeExpression>
+				</jr:barbecue>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>

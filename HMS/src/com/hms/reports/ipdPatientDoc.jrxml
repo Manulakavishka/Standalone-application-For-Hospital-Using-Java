@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.19.1.final using JasperReports Library version 6.19.1-867c00bf88cd4d784d404379d6c05e1b419e8a4c  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ipdPatientDoc" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9fb85b0a-ff06-49c4-a5ff-87c3712d1c3a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="hms"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<parameter name="nic" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT * FROM ipd_doc_patient WHERE patient_nic = $P{nic} && status_id = '1';]]>
+	</queryString>
+	<field name="idipd_doc_patient" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="idipd_doc_patient"/>
+		<property name="com.jaspersoft.studio.field.label" value="idipd_doc_patient"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ipd_doc_patient"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="patient_nic" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="patient_nic"/>
+		<property name="com.jaspersoft.studio.field.label" value="patient_nic"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ipd_doc_patient"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="symptoms" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="symptoms"/>
+		<property name="com.jaspersoft.studio.field.label" value="symptoms"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ipd_doc_patient"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="doc" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="doc"/>
+		<property name="com.jaspersoft.studio.field.label" value="doc"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ipd_doc_patient"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="data" class="java.time.LocalDateTime">
+		<property name="com.jaspersoft.studio.field.name" value="data"/>
+		<property name="com.jaspersoft.studio.field.label" value="data"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ipd_doc_patient"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="status_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="status_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="status_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="ipd_doc_patient"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="253" splitType="Stretch">
+			<staticText>
+				<reportElement x="61" y="99" width="100" height="20" uuid="973ce8f7-8c33-43dd-86f6-82120cf9d2a4"/>
+				<text><![CDATA[4356]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="79" width="100" height="20" uuid="5910f2ca-0065-4d8f-96f3-3c97016cc1c2"/>
+				<text><![CDATA[Abilipitiya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="79" width="51" height="20" uuid="012abfca-603d-446f-befb-eb8ff7d32784"/>
+				<text><![CDATA[City        :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="39" width="51" height="20" uuid="9e0bc634-5f96-4ed9-ac5e-b4d495b60d76"/>
+				<text><![CDATA[Name     :]]></text>
+			</staticText>
+			<image>
+				<reportElement x="382" y="0" width="173" height="148" uuid="1041d9ac-0d45-4fce-985b-44671959f199"/>
+				<imageExpression><![CDATA["C:\\Users\\User\\Desktop\\HMS\\hospital-logo-icon-hospital-logo-icon-135146804.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="167" y="10" width="249" height="29" uuid="6e0c485a-c10a-46ab-9a7b-2d34490ab790"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Neerogya Helth Care Center]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="59" width="100" height="20" uuid="62b9d16d-9b64-426a-9e32-aa38d4fcc564"/>
+				<text><![CDATA[123/ Abilipitiya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="119" width="51" height="20" uuid="c61a3b8b-35f6-4655-82d8-f52b6656ecfa"/>
+				<text><![CDATA[Phone    :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="10" width="157" height="29" uuid="86a977a7-f72d-404f-8743-339a8d7a25f9"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Company Name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="59" width="51" height="20" uuid="f57eca80-db11-40b3-817d-4a395e1415c4"/>
+				<text><![CDATA[Address  :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="39" width="100" height="20" uuid="43ac9a9f-4c04-4be6-ab02-e0566ae6c3e3"/>
+				<text><![CDATA[K.D.K Kodikara]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="99" width="51" height="20" uuid="c22f9b09-60e5-41bd-bd0c-e2d7f79e3166"/>
+				<text><![CDATA[Zip Code:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="139" width="144" height="20" uuid="3718f98a-2fc5-40c9-9a14-116c4cd376d3"/>
+				<text><![CDATA[neerogyacare@hospital.com]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="139" width="51" height="20" uuid="5cb6d722-dd6f-4613-be7c-0e35dbc73f7d"/>
+				<text><![CDATA[E_mail   :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="119" width="100" height="20" uuid="64d0b750-eed2-4104-bc3a-d559efa0b6c4"/>
+				<text><![CDATA[+94754543459]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="79" y="233" width="126" height="20" uuid="40059faf-1e68-4d1f-9363-ddc82015d810"/>
+				<textFieldExpression><![CDATA[$F{patient_nic}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="4" y="233" width="75" height="20" uuid="e94b1fb9-584e-4c1d-9859-b2d1121b1507"/>
+				<text><![CDATA[Patient NIC : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="277" y="233" width="123" height="20" uuid="0e1d7b5a-2b32-428b-92d2-9ad585f7f736"/>
+				<textFieldExpression><![CDATA[$F{doc}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="233" y="233" width="44" height="20" uuid="7317d4fa-8999-4af1-9604-a33bb8a49d52"/>
+				<text><![CDATA[Doctor : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="459" y="233" width="96" height="20" uuid="8d08e327-c5df-4bec-89d5-2c00e862426d"/>
+				<textFieldExpression><![CDATA[$F{data}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="416" y="233" width="43" height="20" uuid="12eec9c6-0a58-47e6-b7df-4b2139b99453"/>
+				<text><![CDATA[Date : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="169" width="378" height="31" uuid="1dcc0b42-0d83-4982-97e2-50dd81cc7461"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Patient Record For  To Admited]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="61" height="20" uuid="da5c9179-42cd-4909-a18a-af970ac930cc"/>
+				<text><![CDATA[symptoms : ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="61" y="0" width="100" height="20" uuid="9d9695b7-5c84-4c03-b790-c4c38d6008cc"/>
+				<textFieldExpression><![CDATA[$F{symptoms}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
